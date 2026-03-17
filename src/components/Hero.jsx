@@ -65,8 +65,8 @@ const Hero = () => {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-12 items-center w-full relative z-10">
-        <motion.div variants={itemVariants} className="order-2 lg:order-1">
-          <motion.div variants={itemVariants} className="flex items-center gap-2 mb-4 text-[#3b82f6] font-semibold tracking-wide uppercase text-sm">
+        <motion.div variants={itemVariants} className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+          <motion.div variants={itemVariants} className="flex items-center justify-center lg:justify-start gap-2 mb-4 text-[#3b82f6] font-semibold tracking-wide uppercase text-sm">
             <span className="w-8 h-[2px] bg-[#3b82f6]"></span>
             Finance & Audit Professional
           </motion.div>
@@ -93,23 +93,23 @@ const Hero = () => {
           
           <motion.p 
             variants={itemVariants} 
-            className="text-secondary-500 text-lg mb-10 leading-relaxed max-w-xl"
+            className="text-secondary-500 text-lg mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0"
           >
             Detail-oriented Internal Auditor with experience in operational, financial, and inventory audits within the automobile sector. Skilled in evaluating internal controls and risk assessment while improving operational efficiency.
           </motion.p>
           
-          <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-10 group/buttons">
+          <motion.div variants={itemVariants} className="flex flex-wrap justify-center lg:justify-start gap-4 mb-10 group/buttons">
             <a 
               href={resumePdf} 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3.5 bg-primary-900 border border-primary-900 text-white font-semibold rounded-xl hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-white hover:text-primary-900 transition-all duration-300 inline-block"
+              className="px-8 py-3.5 bg-primary-900 border border-primary-900 text-white font-semibold rounded-xl hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-white hover:text-primary-900 transition-all duration-300 inline-block w-full sm:w-auto"
             >
               View Resume
             </a>
             <a 
               href="#contact" 
-              className="px-8 py-3.5 bg-white text-primary-900 font-semibold rounded-xl border border-gray-200 hover:-translate-y-1 hover:shadow-lg hover:border-accent-500 hover:text-accent-500 transition-all duration-300 inline-block"
+              className="px-8 py-3.5 bg-white text-primary-900 font-semibold rounded-xl border border-gray-200 hover:-translate-y-1 hover:shadow-lg hover:border-accent-500 hover:text-accent-500 transition-all duration-300 inline-block w-full sm:w-auto"
             >
               Contact
             </a>
@@ -117,24 +117,24 @@ const Hero = () => {
               href="https://www.linkedin.com/in/jeswin-saju-samuel-a340b21bb" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="px-8 py-3.5 bg-bg-light text-secondary-500 font-semibold rounded-xl border border-gray-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-500/20 hover:border-accent-500 hover:bg-accent-500 hover:text-white transition-all duration-300 inline-flex items-center gap-2 group"
+              className="px-8 py-3.5 bg-bg-light text-secondary-500 font-semibold rounded-xl border border-gray-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-500/20 hover:border-accent-500 hover:bg-accent-500 hover:text-white transition-all duration-300 inline-flex items-center justify-center gap-2 group w-full sm:w-auto"
             >
               LinkedIn <ExternalLink size={18} className="group-hover:scale-110 transition-transform" />
             </a>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="flex flex-wrap gap-6 text-sm text-secondary-500 font-medium tracking-wide">
-            <div className="flex items-center gap-2">
-              <MapPin size={18} className="text-accent-500" />
-              Alappuzha, Kerala, India
+        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 text-sm text-secondary-500 font-medium tracking-wide">
+            <div className="flex items-center justify-center gap-2">
+              <MapPin size={18} className="text-accent-500 shrink-0" />
+              <span>Alappuzha, Kerala, India</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Phone size={18} className="text-accent-500" />
-              +91 8078267051
+            <div className="flex items-center justify-center gap-2">
+              <Phone size={18} className="text-accent-500 shrink-0" />
+              <span>+91 8078267051</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Mail size={18} className="text-accent-500" />
-              jeswinsaju2002@gmail.com
+            <div className="flex items-center justify-center gap-2">
+              <Mail size={18} className="text-accent-500 shrink-0" />
+              <span className="break-all">jeswinsaju2002@gmail.com</span>
             </div>
           </motion.div>
         </motion.div>

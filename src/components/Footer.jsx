@@ -8,12 +8,12 @@ const Footer = () => {
         
         {/* Main Footer Content */}
         <div className="mb-6">
-          <p className="font-semibold text-lg text-white mb-1">© 2026 Jeswin Saju Samuel</p>
+          <p className="font-semibold text-lg text-white mb-1">© 2024 Jeswin Saju Samuel</p>
           <p className="text-secondary-500 font-medium">Audit & Finance Portfolio</p>
         </div>
 
         {/* Links */}
-        <div className="flex gap-6 mb-10">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-10">
           <a href="https://www.linkedin.com/in/jeswin-saju-samuel-a340b21bb" target="_blank" rel="noopener noreferrer" className="text-secondary-500 hover:text-white transition-colors duration-300 text-sm font-medium">
             LinkedIn
           </a>

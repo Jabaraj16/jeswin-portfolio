@@ -31,12 +31,12 @@ const Contact = () => {
             </a>
             
             <a href="mailto:jeswinsaju2002@gmail.com" className="flex items-center gap-4 group">
-              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-500 border border-gray-200 group-hover:border-accent-500 group-hover:bg-accent-500 group-hover:text-white transition-all shadow-sm">
+              <div className="w-12 h-12 shrink-0 bg-white rounded-full flex items-center justify-center text-accent-500 border border-gray-200 group-hover:border-accent-500 group-hover:bg-accent-500 group-hover:text-white transition-all shadow-sm">
                 <Mail size={20} />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-semibold text-secondary-500">Email</p>
-                <p className="text-lg font-bold text-primary-900">jeswinsaju2002@gmail.com</p>
+                <p className="text-lg font-bold text-primary-900 break-all">jeswinsaju2002@gmail.com</p>
               </div>
             </a>
             
