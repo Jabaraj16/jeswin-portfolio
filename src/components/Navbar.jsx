@@ -24,10 +24,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-panel py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold tracking-tight text-primary-900">
-          Jeswin<span className="text-accent-500">.</span>
+        <a href="#" className="text-xl font-bold tracking-tight text-white hover:text-[#22d3ee] transition-colors">
+          Jeswin<span className="text-[#3b82f6]">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -36,7 +36,7 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-sm font-medium text-secondary-500 hover:text-primary-900 transition-colors"
+              className="text-sm font-medium text-gray-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] transition-all duration-300"
             >
               {link.name}
             </a>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden text-primary-900"
+          className="md:hidden text-white hover:text-[#22d3ee] transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -59,7 +59,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-bg-white border-t border-gray-100 overflow-hidden"
+            className="md:hidden glass-panel border-t border-white/10 overflow-hidden"
           >
             <div className="flex flex-col px-6 py-4 gap-4">
               {navLinks.map((link) => (
@@ -67,7 +67,7 @@ const Navbar = () => {
                   key={link.name} 
                   href={link.href} 
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-medium text-secondary-500 hover:text-primary-900 transition-colors"
+                  className="text-base font-medium text-gray-300 hover:text-white transition-colors"
                 >
                   {link.name}
                 </a>
