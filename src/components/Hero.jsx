@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Mail, MapPin, Phone, LineChart, BarChart3, ClipboardCheck, FileText, FileSpreadsheet } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import profileImg from '../assets/profile.jpeg';
-import resumePdf from '../assets/JESWIN_S_CV (2).pdf';
+import resumePdf from '../assets/Jeswin Saju Samuel Resume.pdf';
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30, scale: 0.98 },
