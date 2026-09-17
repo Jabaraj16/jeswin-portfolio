@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import BackgroundAnimation from './components/BackgroundAnimation';
 import CursorGlow from './components/CursorGlow';
 import ScrollToTop from './components/ScrollToTop';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       </main>
       <Footer />
       <ScrollToTop />
+      <Analytics />
     </div>
   );
 }
